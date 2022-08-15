@@ -99,15 +99,15 @@ a {
     margin-right: 0;
 }
 
-.menu__list-item a {
+.menu__item {
     font-size: 13px;
     font-weight: normal;
     text-transform: uppercase;
     color: #ffffff;
 }
 
-.menu__list-item:hover,
-.menu__list-item:focus {
+.menu__item:hover,
+.menu__item:focus {
     outline: none;
     color: #b59f5b;
 
