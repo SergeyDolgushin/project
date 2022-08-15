@@ -182,6 +182,103 @@ a {
     display: none;
 }
 
+@media (max-width: 1199px) {
+
+    .menu-button {
+        display: block;
+        width: 1.25em;
+        height: 1em;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        font-size: 20px;
+        position: relative;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+
+    .menu-button:hover,
+    .menu-button:focus {
+        border: none;
+        outline: 1px solid #b59f5b;
+        outline-offset: 10px;
+    }
+
+    .menu-button:before,
+    .menu-button:after {
+        content: "";
+        width: 100%;
+        height: 20%;
+        border-radius: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+    }
+
+    .menu-button:before {
+        top: 0;
+    }
+
+    .menu-button:after {
+        bottom: 0;
+    }
+
+    .menu__button-label {
+        width: 100%;
+        height: 20%;
+        margin-top: -0.1em;
+        border-radius: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .js-menu_active .menu__list {
+        width: 11%;
+        height: 20vh;
+        box-sizing: border-box;
+        padding: 5px;
+
+        border: 2px solid #b59f5b;
+        background-color: #161616;
+
+        position: fixed;
+        top: 22px;
+        right: 34px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .js-menu_active .menu__button {
+        z-index: 999;
+        width: 0.9em;
+    }
+
+    .js-menu_active .menu__button:before,
+    .js-menu_active .menu__button:after {
+        top: 50%;
+        left: 50%;
+        background-color: #b59f5b;
+    }
+
+    .js-menu_active .menu__button:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .js-menu_active .menu__button:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .js-menu_active .menu__button-label {
+        opacity: 0;
+    }
+
+}
+
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .header {
